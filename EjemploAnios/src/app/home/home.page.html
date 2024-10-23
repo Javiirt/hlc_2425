@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Cálculo de años
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="ion-padding">
+    <ion-input type="number" [(ngModel)]="anio" placeholder="Introduzca un año"></ion-input>
+    <p>{{ diferencia }}</p>
+    <ion-button expand="block" (click)="calculaDiferencia()">Calcular</ion-button>
+  </div>
+</ion-content>
